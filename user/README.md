@@ -1,0 +1,1 @@
+Máj uživatel se jmenuje Jan B. Krejčí
