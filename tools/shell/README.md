@@ -1,14 +1,14 @@
 ---
 name: shell
-description: Nástroj pro provedení zadaného příkazu v tmuxu a vrácení jeho výstupu.
+description: Tool for executing a given command in tmux and returning its output.
 ---
 
 # Shell (tmux)
 
-Tento nástroj mi umožňuje spustit bash příkaz v multiplexeru `tmux` a získat zpět jeho výstup. K faktickému vykonání příkazů využívám svůj systémový nástroj `bash`.
+This tool allows me to execute a bash command in the `tmux` multiplexer and retrieve its output. To actually execute the commands, I use my system tool `bash`.
 
-## Použití a pravidla
-1. K provedení akce použiji systémový nástroj `bash`.
-2. Příkaz zadaný uživatelem provedu v rámci `tmux` sezení (např. pomocí `tmux new-session`, `tmux send-keys`, atd.).
-3. Následně zachytím výsledek příkazu (např. pomocí přesměrování do souboru nebo přes `tmux capture-pane -p`) a zajistím, že nezůstanou viset prázdná či zbytečná okna.
-4. Pokud příkaz běží dlouho, tmux mi umožní oddělit proces na pozadí a později zkontrolovat jeho výstup.
+## Usage and rules
+1. I will use the system tool `bash` to perform the action.
+2. I will execute the command requested by the user within a `tmux` session (e.g., using `tmux new-session`, `tmux send-keys`, etc.).
+3. Subsequently, I will capture the result of the command (e.g., by redirecting to a file or via `tmux capture-pane -p`) and ensure that no empty or unnecessary windows are left hanging.
+4. If the command runs for a long time, tmux allows me to detach the process in the background and check its output later.

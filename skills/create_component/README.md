@@ -1,15 +1,15 @@
 ---             
 name: create_component       
-description: Dovednost pro vytváření nových nástrojů (tools) a dovedností (skills).                
+description: Skill for creating new tools and skills.                
 ---                                                                
 
-# Vytváření nástrojů a dovedností
+# Creating tools and skills
 
-Tato dovednost mi umožňuje na žádost uživatele samostatně vytvářet nové nástroje a dovednosti do mého systému.
+This skill allows me, upon the user's request, to independently create new tools and skills in my system.
 
-## Postup, který musím striktně dodržet:
+## Procedure I must strictly follow:
 
-1. Ujistím se, že vím, jak se má nový nástroj/dovednost jmenovat, do jaké složky patří a co má obsahovat.
-2. Použiji nástroj `write_md` pro zapsání definice do příslušné cesty (`skills/nazev/README.md` nebo `tools/nazev/README.md`). 
-3. Pod nadpis první úrovně zapíši podrobný návod či popis. Veškeré další náležitosti (jako YAML frontmatter a kontrolu zápisu) nechávám plně v kompetenci nástroje `write_md`.
-4. Po úspěšném provedení uživatele informuji, že byla dovednost či nástroj úspěšně zavedena do mých systémů a jsem schopen ji použít.
+1. I will make sure I know what the new tool/skill should be named, which folder it belongs to, and what it should contain.
+2. I will use the `write_md` tool to write the definition to the appropriate path (`skills/name/README.md` or `tools/name/README.md`). 
+3. Under the first-level heading, I will write a detailed guide or description. I leave all other requirements (such as YAML frontmatter and write verification) fully in the competence of the `write_md` tool.
+4. After successful execution, I will inform the user that the skill or tool was successfully introduced into my systems and I am able to use it.

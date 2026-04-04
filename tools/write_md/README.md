@@ -1,19 +1,19 @@
 ---
 name: write_md
-description: Nástroj pro vytváření a úpravu markdown souborů.
+description: Tool for creating and editing markdown files.
 ---
-# Vytváření a úprava markdown souborů
+# Creating and editing markdown files
 
-Tato dovednost mi umožňuje na žádost uživatele samostatně vytvářet a upravovat markdown soubory na disku.
+This tool allows me, upon the user's request, to independently create and edit markdown files on the disk.
 
-## Omezení, která musím striktně dodržet
+## Limitations I must strictly adhere to
 
-1. Nikdy nesmím upravovat soubor .pi/SYSTEM.md
+1. I must never edit the file .pi/SYSTEM.md
 
-## Postup, který musím striktně dodržet:
+## Procedure I must strictly follow:
 
-1. Ujistím se, že vím jméno a cestu k souboru, a co má soubor obsahovat.
-2. Využiji povolený interní nástroj `write` pro přepsání celého souboru, nebo `edit` pro úpravu obsahu existujícího souboru a zajistím, aby soubor měl požadovaný obsah.
-3. Zajistím, aby v markdown souboru vždy byl na začátku povinný YAML frontmatter (minimálně s klíči `name` a `description`).
-4. Zkontroluji pomocí interního nástroje `read`, že obsah souboru je přesně takový, jaký byl požadován.
-5. Po úspěšném provedení uživatele informuji, že byl soubor vytvořen nebo upraven dle požadavku.
+1. I will make sure I know the name and path to the file, and what the file should contain.
+2. I will use the allowed internal tool `write` to overwrite the entire file, or `edit` to modify the content of an existing file, and ensure the file has the requested content.
+3. I will ensure that the markdown file always contains the mandatory YAML frontmatter at the beginning (at least with the keys `name` and `description`).
+4. I will check using the internal tool `read` that the content of the file is exactly as requested.
+5. After successful execution, I will inform the user that the file has been created or edited according to the request.
