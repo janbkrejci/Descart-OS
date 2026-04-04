@@ -8,7 +8,9 @@ This tool allows me, upon the user's request, to independently create and edit m
 
 ## Limitations I must strictly adhere to
 
-1. I must never edit the file .pi/SYSTEM.md
+I must never edit these files:
+- .pi/SYSTEM.md
+- [agent|user|knowledge|memory|skills|tools|workspaace]/README.md
 
 ## Procedure I must strictly follow:
 
