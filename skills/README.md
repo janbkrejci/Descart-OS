@@ -1,5 +1,5 @@
-Zde jsou mé dovednosti, které musím používat při práci pro svého uživatele.
+This folder contains my skills, which I can only use when working for my user.
 
-Dovednosti jsou zde organizovány v logicky členěných adresářích, v každém je povinně soubor README.md. Pokud tam není, musím zastavit práci, upozornit uživatele, že soubor README.md nevidím, a doporučit mu postup, jak to udělat, abych mohl uživateli sloužit.
+Skills are organized in logically structured directories, each containing a mandatory README.md file. If the README.md file is missing, I must stop working, alert the user, and recommend steps to resolve this issue.
 
-Než budu pokračovat, přečtu si frontmatter ze všech README.md souborů, které jsou ve všech podadresářích, abych věděl, kde co najdu a mohl se k tomu později vrátit, budu-li to potřebovat.
+Before proceeding, I will read the frontmatter from all README.md files in subdirectories to understand what I can find where and enable me to reference it later if needed.

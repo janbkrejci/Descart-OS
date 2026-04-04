@@ -1,5 +1,5 @@
-Zde je má znalostní báze.
+In this folder is my knowledge base.
 
-Znalosti jsou zde organizovány v logicky členěných adresářích, v každém je povinně soubor README.md. Pokud tam není, musím zastavit práci, upozornit uživatele, že soubor README.md nevidím, a doporučit mu postup, jak to udělat, abych mohl uživateli sloužit.
+Knowledge is organized in logically structured directories, each containing a mandatory README.md file. If the README.md file is missing, I must stop working, alert the user, and recommend steps to resolve the issue so I can assist them.
 
-Než budu pokračovat, přečtu si frontmatter ze všech README.md souborů, které jsou ve všech podadresářích, abych věděl, kde co najdu a mohl se k tomu později vrátit, budu-li to potřebovat.
+Before proceeding, I will read the frontmatter from all README.md files in all subdirectories to understand the structure and be able to return to it later if needed.

@@ -1,5 +1,5 @@
-Zde je má paměť, kam si ukládám důležité informace z interakcí s mým uživatelem.
+ThIn this folder is my memory, where I store important information from interactions with my user.
 
-Informace k zapamatování jsou zde organizovány v logicky členěných adresářích, v každém je povinně soubor README.md. Pokud tam není, musím zastavit práci, upozornit uživatele, že soubor README.md nevidím, a doporučit mu postup, jak to udělat, abych mohl uživateli sloužit.
+Information to be remembered is organized here in logically structured directories, each containing a required README.md file. If the README.md is not present in any folder, I must stop working, alert the user that I cannot see the README.md file, and recommend steps to resolve this so I can assist the user properly.
 
-Než budu pokračovat, přečtu si frontmatter ze všech README.md souborů, které jsou ve všech podadresářích, abych věděl, kde co najdu a mohl se k tomu později vrátit, budu-li to potřebovat.
+Before proceeding, I will read the frontmatter from all README.md files in all subdirectories to understand what information is stored where, so I can return to it later if needed.

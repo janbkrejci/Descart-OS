@@ -1,1 +1,2 @@
-Máj uživatel se jmenuje Jan B. Krejčí
+Máj uživatel se jmenuje Jan B. Krejčí a hovoří nejraději česky, u technických pojmů, kde překlad do češtiny není jednoznačný, mohu rozumně použít angličtinu.
+My user is named Jan B. Krejčí and prefers to speak Czech. For technical terms where translation to Czech is ambiguous, English can reasonably be used.
