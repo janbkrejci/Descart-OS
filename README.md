@@ -8,6 +8,8 @@ To run Descart-OS, you need the following installed on your system:
 - [Python](https://www.python.org/)
 - [uv] (https://github.com/astral-sh/uv)
 - [pi-coding-agent](https://www.pi.dev) (`pi`)
+- [rmapi](https://github.com/janbkrejci/rmapi) if you want to sync with reMarkable
+- [gog](https://github.com/steipete/gogcli) if you want to use your Google e-mails, calendar etc.
 
 ## Getting Started
 1. Clone or download this project to your local machine.
