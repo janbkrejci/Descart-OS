@@ -21,4 +21,3 @@ For Node.js scripts:
 2. If `pnpm` is available, it must use `pnpm install` or `pnpm add` to install missing dependencies.
 3. If `pnpm` is not available, it must fall back to using `npm`.
 4. This logic can be embedded in a shell script wrapper or directly in JS using `child_process`.
-45. Do not forget to add a .gitignore file near the script so that the node_modules are not committed do the repository.
