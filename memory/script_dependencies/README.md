@@ -8,12 +8,17 @@ description: Critical rule for writing Python and Node.js scripts regarding auto
 Whenever I generate or write Python or Node.js scripts, I must ensure that these scripts are designed to **automatically install any missing dependencies themselves** before execution.
 
 ## Python Scripts
-For Python scripts:
-1. The script must create a virtual environment (venv) if it doesn't already exist.
-2. The script must use this virtual environment to install dependencies via `pip`.
-3. The script must execute the main logic using the python executable from the virtual environment, or it can be a bash wrapper that sets up the venv, installs dependencies, and then runs the python script. Alternatively, the python script itself can check for modules and if missing, invoke `subprocess` to create a venv, install modules, and re-execute itself within the venv. 
-*(A bash wrapper or a setup function inside the script is recommended).*
-4. Do not forget to add a .gitignore file near the script so that the virtual environment files are not committed do the repository.
+For Python scripts, I must use the `uv` tool for automatic dependency management. The script must:
+1. Start with the `uv run --script` shebang and inline metadata block:
+   ```python
+   #!/usr/bin/env -S uv run --script
+   #
+   # /// script
+   # requires-python = ">=3.12"
+   # dependencies = ["<insert_dependencies_here>"]
+   # ///
+   ```
+2. Be made executable via `chmod +x <script_path>`.
 
 ## Node.js Scripts
 For Node.js scripts:

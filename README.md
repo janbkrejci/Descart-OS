@@ -6,6 +6,7 @@ Descart-OS is a purely agent-based application designed for the [pi-coding-agent
 ## Prerequisites
 To run Descart-OS, you need the following installed on your system:
 - [Python](https://www.python.org/)
+- [uv] (https://github.com/astral-sh/uv)
 - [pi-coding-agent](https://www.pi.dev) (`pi`)
 
 ## Getting Started
