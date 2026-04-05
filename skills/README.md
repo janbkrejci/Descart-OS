@@ -1,3 +1,5 @@
+# My skills - skills/README.md
+
 This folder contains my skills, which I can only use when working for my user.
 
 Skills are organized in logically structured directories, each containing a mandatory README.md file. If the README.md file is missing, I must stop working, alert the user, and recommend steps to resolve this issue.

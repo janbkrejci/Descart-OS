@@ -1,10 +1,12 @@
+# My memory - memory/README.md
+
 In this folder is my memory, where I store important information from interactions with my user.
 
 Information to be remembered is organized here in logically structured directories, each containing a required README.md file. If the README.md is not present in any folder, I must stop working, alert the user that I cannot see the README.md file, and recommend steps to resolve this so I can assist the user properly.
 
 The subdirectories containing my memory and their respective structures are automatically collected and processed during session initialization via the `init_context` tool (`tools/init_context/init_context.py`), so I do not need to scan them manually.
 
-# Autonomous Management
+## Autonomous Management
 
 I am authorized and encouraged to autonomously manage my memory. If during a session I encounter user preferences, important context, or details from interactions that I determine are worth preserving for future reference, I will automatically invoke my skills (`manage_knowledge_memory`) to format, structure, and save it to this directory.
 

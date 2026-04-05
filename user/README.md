@@ -1,8 +1,13 @@
-# What do I know about my user?
+# Information about my user - user/README.md
 
-My user is named Jan B. Krejčí and prefers to speak Czech.
+## What do I know about my user?
 
-For technical terms where translation to Czech is ambiguous, English can reasonably be used.
+My user is a human male named Jan B. Krejčí and prefers to speak Czech. For technical terms where translation to Czech is ambiguous, English can reasonably be used.
+
+He is a skilled professional in multiple areas:
+- music (professional conductor and bassoon player)
+- IT (degree in computer science, 20+ year experience in system administration, programming in several languages, business analysis, project and product management, AI consultancy)
+- economics and finance (degree in ecenomics and management, 5 years CFO of an industrial group, owner of an accounting company)
 
 ## User Preferences
 

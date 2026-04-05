@@ -14,10 +14,10 @@ This tool allows me to search the internet using DuckDuckGo. It invokes a built-
 2. Execute the python script provided in this tool directory via the `bash` tool:
    ```bash
    # For broad match:
-   python3 tools/search_internet/ddg_search.py <num_results> "<query>"
+   tools/search_internet/ddg_search.py <num_results> "<query>"
    
    # For exact match (note the nested double quotes inside single quotes):
-   python3 tools/search_internet/ddg_search.py <num_results> '"<exact_query>"'
+   tools/search_internet/ddg_search.py <num_results> '"<exact_query>"'
    ```
 3. Read the output from the script which will be a standard markdown table with columns `Number`, `Result`, and `Description`.
 4. Provide the table directly to the user or use it to compile an answer.

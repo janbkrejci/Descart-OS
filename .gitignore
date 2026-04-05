@@ -1,4 +1,6 @@
 workspace
+!workspace/.gitignore
+!workspace/README.md
 .DS_Store
 .venv
 node_modules

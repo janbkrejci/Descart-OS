@@ -1,54 +1,99 @@
+#!/usr/bin/env -S uv run --script
+#
+# /// script
+# requires-python = ">=3.10"
+# dependencies = []
+# ///
+
 import os
 
-files = [
-    "agent/README.md",
-    "user/README.md",
-    "knowledge/README.md",
-    "memory/README.md",
-    "skills/README.md",
-    "tools/README.md",
-    "workspace/README.md"
+folders = [
+    "agent",
+    "user",
+    "skills",
+    "tools",
+    "memory",
+    "knowledge",
+    "workspace"
 ]
 
-folders_with_frontmatter = ["knowledge", "memory", "skills", "tools"]
+headings = {
+    "skills": "## Currently available skills",
+    "tools": "## Currently available tools",
+    "memory": "## Current memories",
+    "knowledge": "## Current knowledge base"
+}
 
-print("# SESSION INITIALIZATION CONTEXT\n")
-
-for file_path in files:
-    print(f"## Content of {file_path}")
-    if os.path.exists(file_path):
+def get_frontmatter(file_path):
+    frontmatter_lines = []
+    in_frontmatter = False
+    try:
         with open(file_path, "r", encoding="utf-8") as f:
-            print(f.read())
-    else:
-        print(f"WARNING: {file_path} not found.")
-    print("-" * 40 + "\n")
+            for line in f:
+                if line.strip() == "---":
+                    if not in_frontmatter:
+                        in_frontmatter = True
+                        frontmatter_lines.append("\n")
+                    else:
+                        # frontmatter_lines.append("")
+                        break
+                elif in_frontmatter:
+                    frontmatter_lines.append("- " + line)
+    except Exception:
+        pass
+    
+    if len(frontmatter_lines) > 2:  # Ensure we have at least the opening and closing '---'
+        return "".join(frontmatter_lines)
+    return ""
 
-for folder in folders_with_frontmatter:
-    print(f"## Frontmatters for {folder}/")
-    if os.path.exists(folder):
-        subdirs = [os.path.join(folder, d) for d in os.listdir(folder) if os.path.isdir(os.path.join(folder, d))]
-        for subdir in sorted(subdirs):
-            readme_path = os.path.join(subdir, "README.md")
-            if os.path.exists(readme_path):
-                with open(readme_path, "r", encoding="utf-8") as f:
-                    lines = f.readlines()
+def process_subdirectories(base_folder):
+    results = []
+    for root, dirs, files in os.walk(base_folder):
+        if root == base_folder:
+            continue
+        
+        if "README.md" in files:
+            readme_path = os.path.join(root, "README.md")
+            fm = get_frontmatter(readme_path)
+            if fm:
+                results.append((readme_path, fm))
                 
-                in_frontmatter = False
-                frontmatter_lines = []
-                for line in lines:
-                    if line.strip() == "---":
-                        if not in_frontmatter:
-                            in_frontmatter = True
-                            frontmatter_lines.append(line)
-                        else:
-                            frontmatter_lines.append(line)
-                            break
-                    elif in_frontmatter:
-                        frontmatter_lines.append(line)
-                
-                if frontmatter_lines:
-                    print(f"### {readme_path}")
-                    print("".join(frontmatter_lines))
-    else:
-        print(f"WARNING: Folder {folder}/ not found.")
-    print("-" * 40 + "\n")
+    results.sort(key=lambda x: x[0])
+    return results
+
+def main():
+    print("SESSION INITIALIZATION CONTEXT - IMPORTANT\n")
+
+    for folder in folders:
+        file_path = os.path.join(folder, "README.md")
+        # print(f"## Content of {file_path}")
+        if os.path.exists(file_path):
+            with open(file_path, "r", encoding="utf-8") as f:
+                print(f.read().strip())
+        else:
+            print(f"WARNING: {file_path} not found.")
+        
+        # print("\n" + "-" * 40 + "\n")
+        print()
+        
+        if folder in headings:
+            print(headings[folder])
+            print()
+            if os.path.exists(folder):
+                sub_results = process_subdirectories(folder)
+                if not sub_results:
+                    print("None.\n")
+                else:
+                    for path, fm in sub_results:
+                        print(f"### {path}")
+                        print(fm)
+                # print()
+            else:
+                print(f"WARNING: Folder {folder}/ not found.")
+            # print("-" * 40 + "\n")
+            # print()
+
+    print("END OF SESSION INITIALIZATION CONTEXT\n")
+
+if __name__ == "__main__":
+    main()
