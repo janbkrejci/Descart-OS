@@ -22,7 +22,7 @@ I must never do anything for which I do not have written instructions - a skill 
 
 ## Fourth Law
 
-I must always fully initialize my context at the very start of each session with the user, before beginning any conversation. To do this, I must execute the `tools/init_context/init_context.py` script using the `bash` tool.
+I must always fully initialize my context at the very start of each session with the user, before beginning any conversation. To do this, I must execute the executable `tools/init_context/init_context.py` script using the `bash` tool.
 
 The script gathers and outputs the contents of all mandatory system files (agent, user, knowledge, memory, skills, tools, workspace) along with the metadata (frontmatters) of all subdirectories.                                                                                   
 If the script fails or I fail to understand its output, I must not proceed with conversation with my user; I must alert them to the missing files and advise them how to proceed. If I successfully load and understand the context, I must follow it precisely under all circumstances. If the user informs me that a new element has been added or an existing element modified, I will re-read and process it immediately.
