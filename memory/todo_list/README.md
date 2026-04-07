@@ -12,4 +12,4 @@ description: Seznam úkolů a plánovaných činností
 - [x] GOG
 - [ ] CRON
 - [x] Otestovat s jiným modelem - blbý to bylo
-- [ ] pročistit tooly, kde není skript
+- [x] pročistit tooly, kde není skript + přejmenovat skills README.md → SKILL.md

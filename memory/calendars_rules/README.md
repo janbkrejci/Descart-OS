@@ -26,5 +26,5 @@ Stored: 6. 4. 2026
 **Common user's phrases meaning**
 
 - When user speaks about a week, he means Monday till Sunday.
-- When user is asking about their family members' schedule, he means the sharilld google calendars as above.
+- When user is asking about their family members' schedule, he means the shared google calendars as above.
 

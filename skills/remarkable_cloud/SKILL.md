@@ -32,7 +32,7 @@ The `rmapi` tool supports the following operations on the reMarkable cloud:
 3.  **Uploading a local PDF (`put`)**
     - Command: `rmapi put <local_path_to_pdf> [folder]`
     - Uploads a local PDF file to the specified remote folder (defaults to root `/` if omitted).
-    - **Important:** Before uploading, use `ls!` to check if the file already exists in the target destination. If it exists there, you must delete it first.
+    - **Important:** Before uploading, use `ls` to check if the file already exists in the target destination. If it exists there, you must delete it first.
 
 4.  **Removing a file (`rm`)**
     - Command: `rmapi rm <path>`

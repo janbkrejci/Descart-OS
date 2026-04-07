@@ -46,14 +46,14 @@ def get_frontmatter(file_path):
         return "".join(frontmatter_lines)
     return ""
 
-def process_subdirectories(base_folder):
+def process_subdirectories(base_folder, filename="README.md"):
     results = []
     for root, dirs, files in os.walk(base_folder):
         if root == base_folder:
             continue
         
-        if "README.md" in files:
-            readme_path = os.path.join(root, "README.md")
+        if filename in files:
+            readme_path = os.path.join(root, filename)
             fm = get_frontmatter(readme_path)
             if fm:
                 results.append((readme_path, fm))
@@ -80,7 +80,8 @@ def main():
             print(headings[folder])
             print()
             if os.path.exists(folder):
-                sub_results = process_subdirectories(folder)
+                filename = "SKILL.md" if folder == "skills" else "README.md"
+                sub_results = process_subdirectories(folder, filename)
                 if not sub_results:
                     print("None.\n")
                 else:
