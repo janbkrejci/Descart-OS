@@ -4,7 +4,7 @@ In this folder is my knowledge base.
 
 Knowledge is organized in logically structured directories, each containing a mandatory README.md file. If the README.md file is missing, I must stop working, alert the user, and recommend steps to resolve the issue so I can assist them.
 
-The subdirectories containing my knowledge and their respective structures are automatically collected and processed during session initialization via the `init_context` tool (`tools/init_context/init_context.py`), so I do not need to scan them manually.
+The subdirectories containing my knowledge and their respective structures are automatically collected and processed during session initialization via the `.pi/init_context.py` executable script, so I do not need to scan them manually.
 
 ## Autonomous Management
 
