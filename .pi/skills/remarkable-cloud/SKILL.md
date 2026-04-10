@@ -5,7 +5,7 @@ description: Skill for interacting with reMarkable cloud using rmapi binary.
 
 # Skill: remarkable-cloud
 
-This skill enables the assistant to interact with a reMarkable tablet's cloud storage using the `rmapi` Go executable and `bash` internal tool.
+This skill enables the assistant to interact with a reMarkable tablet's cloud storage using the `rmapi` Go executable and `bash` internal tool. The reMarkable tablet can store documents in PDF or ePub format.
 
 ## Prerequisites
 - The `rmapi` command-line tool must be installed and accessible in the system's `PATH`. If it is missing, this skill must automatically stop and instruct the user to visit `https://github.com/janbkrejci/rmapi`.
